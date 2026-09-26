@@ -607,7 +607,7 @@ startBtnEl.addEventListener('click', async () => {
   player.name = code;
   player.phone = document.getElementById('phoneInput').value.trim();
   sfxClick();
-  alert('تنبيه ⏱️: الامتحان هيبدأ دلوقتي، كل سؤال ليه 20 ثانية بس، فجاوب بسرعة وركّز!');
+  alert('تنبيه ⏱️: الامتحان هيبدأ دلوقتي، كل سؤال ليه 30 ثانية بس، فجاوب بسرعة وركّز!');
   startGame();
 });
 
@@ -643,8 +643,8 @@ const streakNum = document.getElementById('streakNum');
 const timerFill = document.getElementById('timerFill');
 const mainCard = document.getElementById('mainCard');
 const letters = ['أ','ب','ج','د'];
-let timerInterval = null, timeLeft = 20;
-const TIME_LIMIT = 20;
+let timerInterval = null, timeLeft = 30;
+const TIME_LIMIT = 30;
 
 function buildGame(){
   gameQuestions = shuffleArray(questions).map(item => {
