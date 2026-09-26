@@ -96,7 +96,7 @@ app.delete('/api/players', (req, res) => {
 });
 
 // ---------- تقديم صفحة الامتحان نفسها ----------
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname));
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
